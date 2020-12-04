@@ -1,0 +1,85 @@
+.App {
+  width: 100vw;
+  max-width: 1800px;
+  min-height: 100vh;
+  margin-top: 0;
+  /* background-color: black; */
+  background-image: url(./img/ocean.jpg);
+  position: absolute;
+  padding: 50px;
+}
+
+.container {
+  /* max-width: 50%; */
+  margin-top: 50px;
+  background-color: lightgrey;
+  position: relative;
+  padding: 20px;
+  /* width: 100% !important;  */
+}
+
+.list-group .list-group-item {
+  cursor: pointer;
+}
+
+.list-group .list-group-item:hover {
+  background-color: lightgreen;
+}
+
+.btn {
+  width: 100px;
+  height: 39px;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+    .App{
+      /* background-color:green; */
+      background-image: url(./img/retro-furnish.png);
+    }
+
+    .container {
+      height: auto;
+      margin-top: 75px;
+    }
+  }
+
+  
+  
+  /* SMARTPHONE */
+@media (max-width: 670px) {
+    .App{
+      /* background-color:blue; */
+      background-image: url(./img/bicycles.png);
+      height: 100%vh;
+    }
+    .container{
+      /* width: 25%; */
+      /* margin-left: -20px; */
+      margin-top: 20px;
+    }
+    .todo {
+      font-size: 25px;
+    }
+    .form-control {
+      width: 20px;
+    }
+    .form-group input {
+      font-size: 15px;
+    }
+    .btn {
+      font-size: 10px;
+    }
+    ::placeholder {
+      font-size: small;
+    }
+    li {
+      font-size: small;
+    }
+    
+  }
