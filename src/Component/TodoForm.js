@@ -62,27 +62,36 @@ export class TodoForm extends Component {
     };
 
     handleDelete = (id) => {
-        const filteredItems = this.state.items.filter(item => item.id !== id)
-        this.setState({
-            items: filteredItems
-        });
+
+        const confirm = window.confirm('Are you sure to delete this item?');
+
+        if (confirm) {
+            const filteredItems = this.state.items.filter(item => item.id !== id)
+            this.setState({
+                items: filteredItems
+            });
+        }
         console.log(id);
     };
 
     handleEdit = (id) => {
-        console.log('Edited');
+        // console.log('Edited');
 
-        const filteredItems = this.state.items.filter(item => item.id !== id);
+        const confirm = window.confirm('Are you sure to edit this item?');
 
-        const selectedItem = this.state.items.find(item => item.id === id);
+        if (confirm) {
+            const filteredItems = this.state.items.filter(item => item.id !== id);
 
-        console.log(selectedItem);
+            const selectedItem = this.state.items.find(item => item.id === id);
 
-        this.setState({
-            items: filteredItems,
-            item: selectedItem.list,
-            isEdit: true,
-        });
+            console.log(selectedItem);
+
+            this.setState({
+                items: filteredItems,
+                item: selectedItem.list,
+                isEdit: true,
+            });
+        }
     };
 
     render() {

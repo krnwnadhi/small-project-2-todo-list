@@ -20,6 +20,8 @@ export class TodoList extends Component {
                         )
                     })
                 }
+                <br />
+                {/* <button className='btn btn-danger'>Clear List</button> */}
             </div>
         )
     }
