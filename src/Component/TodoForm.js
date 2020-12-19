@@ -63,7 +63,7 @@ export class TodoForm extends Component {
 
     handleDelete = (id) => {
 
-        const confirm = window.confirm('Are you sure to delete this item?');
+        const confirm = window.confirm('Are you sure to DELETE this item?');
 
         if (confirm) {
             const filteredItems = this.state.items.filter(item => item.id !== id)
@@ -77,7 +77,7 @@ export class TodoForm extends Component {
     handleEdit = (id) => {
         // console.log('Edited');
 
-        const confirm = window.confirm('Are you sure to edit this item?');
+        const confirm = window.confirm('Are you sure to EDIT this item?');
 
         if (confirm) {
             const filteredItems = this.state.items.filter(item => item.id !== id);
@@ -91,6 +91,17 @@ export class TodoForm extends Component {
                 item: selectedItem.list,
                 isEdit: true,
             });
+        }
+    };
+
+    clearList = () => {
+
+        const confirm = window.confirm('Are you sure to CLEAR All item?');
+
+        if (confirm) {
+            this.setState({
+                items: []
+            })
         }
     };
 
@@ -119,6 +130,7 @@ export class TodoForm extends Component {
                         items={this.state.items}
                         handleDelete={this.handleDelete}
                         handleEdit={this.handleEdit}
+                        clearList={this.clearList}
                     />
                 )}
             </div>

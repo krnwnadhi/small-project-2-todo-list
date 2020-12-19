@@ -21,7 +21,12 @@ export class TodoList extends Component {
                     })
                 }
                 <br />
-                {/* <button className='btn btn-danger'>Clear List</button> */}
+                <button
+                    className='btn btn-danger'
+                    onClick={this.props.clearList}
+                >
+                    Clear List
+                </button>
             </div>
         )
     }
