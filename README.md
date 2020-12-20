@@ -16,6 +16,10 @@
 
 <img width="958" alt="4" src="https://user-images.githubusercontent.com/72812515/102684751-f0639c00-420d-11eb-9bb8-294463eb06ca.png">
 
+## --- Todo Clear All List ---
+
+<img width="867" alt="1" src="https://user-images.githubusercontent.com/72812515/102711480-b3baa200-42ec-11eb-9a30-6b5b7ea1a849.png">
+
 #### REACTJS with Bootstrap v4
 
 ### ---------------------------------------------------------------------------------------------
